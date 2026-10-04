@@ -43,7 +43,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](https://ai-fitness-assistant-nine.vercel.app/) in your browser to view the app.
+Open the [live app](https://ai-fitness-assistant-nine.vercel.app/) in your browser to view it.
 
 ## Available Scripts
 
