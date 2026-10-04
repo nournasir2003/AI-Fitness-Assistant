@@ -77,6 +77,11 @@ src/
 - Keep reusable UI logic in the components folder.
 - Run linting and production builds before committing major changes.
 
+## Deployment Documentation
+
+- [Production Deployment Checklist](docs/DEPLOYMENT_CHECKLIST.md)
+- [Rollback Plan](docs/ROLLBACK_PLAN.md)
+
 ## Author
 
 Nour Nasir — Front-end AI Engineer Intern

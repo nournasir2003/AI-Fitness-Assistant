@@ -1,3 +1,7 @@
+// src/components/chat/ChatInput.tsx
+import { Button } from "@/components/ui/button";
+import { Send, Square } from "lucide-react";
+
 export default function ChatInput({
   input,
   onChange,
@@ -12,34 +16,35 @@ export default function ChatInput({
   onStop: () => void;
 }) {
   return (
-    <form
-      onSubmit={onSubmit}
-      className="flex items-center gap-2 p-3 border-t bg-white sticky bottom-0"
-    >
+    <form onSubmit={onSubmit} className="flex items-center gap-2 p-3">
       <input
+        dir="auto"
         value={input}
         onChange={onChange}
         placeholder="Type your message..."
         disabled={isStreaming}
-        className="flex-1 rounded-full border px-4 py-2 text-sm outline-none disabled:opacity-50"
+        className="flex-1 rounded-full border border-border bg-card/50 backdrop-blur-md px-4 py-2.5 text-sm outline-none transition-all focus:border-brand focus:ring-2 focus:ring-brand/20 disabled:opacity-50"
       />
 
       {isStreaming ? (
-        <button
+        <Button
           type="button"
           onClick={onStop}
-          className="rounded-full bg-red-500 text-white px-4 py-2 text-sm shrink-0"
+          size="icon"
+          variant="destructive"
+          className="rounded-full shrink-0 animate-in zoom-in duration-200"
         >
-          Stop
-        </button>
+          <Square className="w-4 h-4" />
+        </Button>
       ) : (
-        <button
+        <Button
           type="submit"
           disabled={!input.trim()}
-          className="rounded-full bg-black text-white px-4 py-2 text-sm shrink-0 disabled:opacity-40"
+          size="icon"
+          className="rounded-full shrink-0 bg-brand hover:bg-brand/90 text-brand-foreground shadow-md shadow-brand/25 disabled:opacity-40 disabled:shadow-none transition-all"
         >
-          Send
-        </button>
+          <Send className="w-4 h-4" />
+        </Button>
       )}
     </form>
   );

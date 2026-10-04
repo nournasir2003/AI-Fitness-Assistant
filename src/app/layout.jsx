@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "FlyRank Capstone",
-  description: "FlyRank internship capstone project",
+  description:
+    "AI Front-End Toolkit, built with Next.js and integrated with artificial intelligence",
 };
 
 export default function RootLayout({ children }) {

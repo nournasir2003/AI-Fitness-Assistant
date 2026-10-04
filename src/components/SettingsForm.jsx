@@ -7,6 +7,7 @@ import {
   validateEmail,
   validatePassword,
 } from "./validation";
+export { validateFullName, validateEmail, validatePassword };
 
 const initialValues = {
   fullName: "",
