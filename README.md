@@ -1,5 +1,12 @@
 # AI Fitness Assistant - FlyRank Internship Capstone
 
+## 🎥 Demo
+
+**👉 [Watch the demo video](https://drive.google.com/file/d/1aZMWIAKHuHzCRIBVdNymLe-M3tT-qXXD/view?usp=sharing)**
+
+**🌐 [Try the live app](https://ai-fitness-assistant-nine.vercel.app/)**
+
+
 ## Project Brief
 
 AI Fitness Assistant is a web app that gives people instant, personalized fitness and nutrition guidance through a conversational AI chat. Many beginners struggle to build workout routines or eat well because personal trainers are expensive and generic online advice doesn't fit their goals, so this app lets them ask questions anytime and get tailored answers, with their conversations saved to their account for easy follow-up. It is built for beginners and busy people who want affordable, always-available support on their fitness journey. I chose this idea because fitness is something I'm personally interested in, and it was a practical way to combine AI, authentication, and a real-time database in a project that solves an everyday problem.
